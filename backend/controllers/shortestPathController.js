@@ -46,17 +46,17 @@ const calculateEstimatedTime = (path, roads) => {
         let weight = 1;
         switch (road.traffic_condition) {
             case 'moderate':
-                weight = 1.5;
+                weight = 5;
                 break;
             case 'heavy':
-                weight = 2;
+                weight = 10;
                 break;
         }
 
         totalWeight += road.distance * weight;
     }
 
-    return Math.round(totalWeight / totalDistance * 10); // Simplified calculation for estimated time
+    return Math.round(totalWeight / totalDistance * 10); 
 };
 
 exports.calculateShortestPath = async (req, res) => {

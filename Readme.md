@@ -1,13 +1,13 @@
 To Run This Code:
 1. Clone the repo
-     git clone https://github.com/shreyshah173/Shipmnts-Round1.git
+    `git clone https://github.com/shreyshah173/Shipmnts-Round1.git`
 
 2. Go to backend directory
-    cd backend
+    `cd backend`
 
 3. Give commands 
-    npm install
-    nodemon server.js
+    `npm install`
+    `nodemon server.js`
 
 
 
