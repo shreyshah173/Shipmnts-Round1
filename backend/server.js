@@ -10,10 +10,12 @@ app.use(bodyParser.json());
 const locationRoutes = require('./routes/locationRoutes');
 const roadRoutes = require('./routes/roadRoutes');
 const trafficUpdateRoutes = require('./routes/trafficUpdateRoutes');
+const shortestPathRoutes = require('./routes/shortestPathRoutes'); 
 
 app.use('/', locationRoutes);
 app.use('/', roadRoutes);
 app.use('/', trafficUpdateRoutes);
+app.use('/', shortestPathRoutes); 
 
 mongoose.connect(process.env.mongo_url)
     .then(() => {

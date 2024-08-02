@@ -17,7 +17,7 @@ exports.createLocation = async (req, res) => {
         const savedLocation = await location.save();
         res.status(201).json(savedLocation);
     } catch (error) {
-        console.error('Error saving location:', error); // Log the error details
+        console.error('Error saving location:', error);  
         res.status(500).json({ message: 'Server error', error });
     }
 };

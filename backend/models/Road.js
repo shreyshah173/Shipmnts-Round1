@@ -1,21 +1,24 @@
 const mongoose = require('mongoose');
 
 const roadSchema = new mongoose.Schema({
-    "start_location_id":{
-        type:String,
-        required:true,
+    start_location_id: {
+        type: mongoose.Schema.Types.ObjectId, // ObjectId reference to Location model
+        ref: 'Location',
+        required: true
     },
-    "end_location_id" :{
-        type:String,
-        required:true,
+    end_location_id: {
+        type: mongoose.Schema.Types.ObjectId, // ObjectId reference to Location model
+        ref: 'Location',
+        required: true
     },
-    "distance":{
-        type:Number,
-        required:true,
+    distance: {
+        type: Number,
+        required: true
     },
-    "traffic_condition":{
-        type:String,
-        required:true,
+    traffic_condition: {
+        type: String,
+        enum: ['clear', 'moderate', 'heavy'],
+        required: true
     }
 });
 

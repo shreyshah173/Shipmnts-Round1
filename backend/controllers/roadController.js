@@ -18,7 +18,7 @@ exports.createRoad = async (req, res) => {
         const savedRoad = await road.save();
         res.status(201).json(savedRoad);
     } catch (error) {
-        console.error('Error saving road:', error); // Log the error details
+        console.error('Error saving road:', error); 
         res.status(500).json({ message: 'Server error', error });
     }
 };
