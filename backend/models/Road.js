@@ -2,11 +2,11 @@ const mongoose = require('mongoose');
 
 const roadSchema = new mongoose.Schema({
     "start_location_id":{
-        type:Number,
+        type:String,
         required:true,
     },
     "end_location_id" :{
-        type:Number,
+        type:String,
         required:true,
     },
     "distance":{

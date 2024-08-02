@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const trafficUpdateSchema = new mongoose.Schema({
     road_id: {
-        type: Number,
+        type: String,
         ref: 'Road',
         required: true
     },
