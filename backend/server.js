@@ -3,18 +3,17 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const app = express();
 
-
-require('dotenv').config()
+require('dotenv').config();
 
 app.use(bodyParser.json());
 
-
 const locationRoutes = require('./routes/locationRoutes');
 const roadRoutes = require('./routes/roadRoutes');
+const trafficUpdateRoutes = require('./routes/trafficUpdateRoutes');
 
 app.use('/', locationRoutes);
-app.use('/',roadRoutes);
-
+app.use('/', roadRoutes);
+app.use('/', trafficUpdateRoutes);
 
 mongoose.connect(process.env.mongo_url)
     .then(() => {
