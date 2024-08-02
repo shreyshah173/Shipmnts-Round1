@@ -1,4 +1,4 @@
-const TrafficUpdate = require('../models/trafficUpdate');
+const TrafficUpdate = require('../models/TrafficUpdate');
 
 exports.createTrafficUpdate = async (req, res) => {
     try {
