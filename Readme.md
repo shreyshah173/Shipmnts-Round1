@@ -5,6 +5,9 @@ To Run This Code:
 2. Go to backend directory
     cd backend
 
+3. Give commands 
+    npm install
+    nodemon server.js
 
 
 
@@ -22,3 +25,6 @@ This image shows the second endpoint i.e., /roads which has post method for the 
 This image shows the third endpoint i.e., /traffic-roads which has post method for the road_id,timestamp,
 traffic_condition
 ![alt text](image-2.png)
+
+This images the fourth endpoint i.e., / shortest-path which takes two parameters as input and give the path and estimated time and total distance in response
+![alt text](image-1.png)
